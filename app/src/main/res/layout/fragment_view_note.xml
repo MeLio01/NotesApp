@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityFragments.ViewNote"
+    android:background="@color/black"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clViewNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <ImageButton
+            android:id="@+id/ibBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/vec_back"
+            android:background="@drawable/img_btn_rectangle_bg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="65dp"
+            android:layout_marginStart="30dp"
+            />
+
+        <ImageButton
+            android:id="@+id/ibEdit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/vec_edit"
+            android:background="@drawable/img_btn_rectangle_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="30dp"
+            />
+
+        <TextView
+            android:id="@+id/tvNoteTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="This is Heading 1"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:fontFamily="@font/urbanist_bold"
+            app:layout_constraintTop_toBottomOf="@id/ibBack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:id="@+id/tvNoteDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mar 10, 2019"
+            android:textColor="@color/txt_date"
+            android:textSize="15sp"
+            android:fontFamily="@font/varela_round"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvNoteTitle"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvNoteContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="hgfdjhsgfsfkgs shfghf djhsfg fhj ghgkduwh weuywif hc hvjruiuw d dywet f uyf y f . ufyui fytw ff sdf sf s fs fs d sdf sd fds f sfdfwf hgfdjhsgfsfkgs shfghf djhsfg fhj ghgkduwh weuywif hc hvjruiuw d dywet f uyf y f . ufyui fytw ff sdf sf s fs fs d sdf sd fds f sfdfwf hgfdjhsgfsfkgs shfghf djhsfg fhj ghgkduwh weuywif hc hvjruiuw d dywet f uyf y f . ufyui fytw ff sdf sf s fs fs d sdf sd fds f sfdfwf hgfdjhsgfsfkgs shfghf djhsfg fhj ghgkduwh weuywif hc hvjruiuw d dywet f uyf y f . ufyui fytw ff sdf sf s fs fs d sdf sd fds f sfdfwf dywet f uyf y f . ufyui fytw ff sdf sf s fs fs d sdf sd fds f sfdfwf dywet f uyf y f . ufyui fytw ff sdf sf s fs fs d sdf sd fds f sfdfwfdywet f uyf y f . ufyui fytw ff sdf sf s fs fs d sdf sd fds f sfdfwf "
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/urbanist_regular"
+            app:layout_constraintTop_toBottomOf="@id/tvNoteDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

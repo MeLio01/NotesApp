@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notes">Notes</string>
+    <string name="save">Save</string>
+    <string name="title">Title</string>
+    <string name="type_something">Type Something...</string>
+</resources>

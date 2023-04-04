@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navgraph"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.example.notes.MainActivityFragments.SplashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreen_to_notes"
+            app:destination="@id/notes"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/notes"
+        android:name="com.example.notes.MainActivityFragments.Notes"
+        android:label="fragment_notes"
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_notes_to_viewNote"
+            app:destination="@id/viewNote" />
+        <action
+            android:id="@+id/action_notes_to_editNote"
+            app:destination="@id/editNote" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewNote"
+        android:name="com.example.notes.MainActivityFragments.ViewNote"
+        android:label="fragment_view_note"
+        tools:layout="@layout/fragment_view_note" >
+        <action
+            android:id="@+id/action_viewNote_to_editNote"
+            app:destination="@id/editNote" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNote"
+        android:name="com.example.notes.MainActivityFragments.EditNote"
+        android:label="fragment_edit_note"
+        tools:layout="@layout/fragment_edit_note" >
+        <action
+            android:id="@+id/action_editNote_to_notes"
+            app:destination="@id/notes" />
+    </fragment>
+</navigation>
