@@ -21,13 +21,20 @@ class ViewNote : Fragment() {
 
         binding = FragmentViewNoteBinding.inflate(layoutInflater, container, false)
 
+        // Back Button
         binding.ibBack.setOnClickListener {
             activity?.onBackPressed()
         }
 
+        // Edit Note
         binding.ibEdit.setOnClickListener {
             val action = ViewNoteDirections.actionViewNoteToEditNote()
             findNavController().navigate(action)
+        }
+
+        // Delete Note
+        binding.ibDelete.setOnClickListener {
+
         }
 
         return binding.root
