@@ -9,7 +9,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.notes.Database.Note
 import com.example.notes.R
 
-class Adapter(private val context: Context, private val list: List<Note>): RecyclerView.Adapter<Adapter.ViewHolder>() {
+class Adapter(private val context: Context,
+              private val list: List<Note>,
+              private val cellClickListener: CellClickListener
+              ): RecyclerView.Adapter<Adapter.ViewHolder>() {
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val title: TextView = itemView.findViewById(R.id.tvNoteTitle)
@@ -28,6 +31,10 @@ class Adapter(private val context: Context, private val list: List<Note>): Recyc
         val note = list[position]
         holder.title.text = note.title
         holder.date.text = note.date
+
+        holder.itemView.setOnClickListener {
+            cellClickListener.onCellClickListener(note.id)
+        }
     }
 
 }

@@ -10,6 +10,9 @@ interface NoteDao {
     @Query("SELECT * FROM note ORDER BY date DESC ")
     suspend fun getAll(): List<Note>
 
+    @Query("SELECT * FROM note WHERE id = :id")
+    suspend fun getNoteById(id: Int): Note
+
     // use Upsert instead of insert and update
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(note: Note)

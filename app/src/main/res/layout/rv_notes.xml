@@ -28,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="This is Heading 1"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 android:fontFamily="@font/urbanist_regular"
                 app:layout_constraintStart_toStartOf="parent"
