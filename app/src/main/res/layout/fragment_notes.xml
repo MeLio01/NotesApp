@@ -23,18 +23,6 @@
         android:layout_marginStart="30dp"
         />
 
-    <ImageButton
-        android:id="@+id/ibSearch"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/vec_search"
-        android:background="@drawable/img_btn_rectangle_bg"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="65dp"
-        android:layout_marginEnd="30dp"
-        />
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvNotes"
         android:layout_width="match_parent"

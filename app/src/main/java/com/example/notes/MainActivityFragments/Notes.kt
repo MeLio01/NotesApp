@@ -55,19 +55,11 @@ class Notes : Fragment(), CellClickListener {
             findNavController().navigate(action)
         }
 
-        // Search Note
-        binding.ibSearch.setOnClickListener {
-
-
-        }
-
-
         return binding.root
     }
 
 
     override fun onCellClickListener(id: Int) {
-//        setFragmentResult("noteid", bundleOf("id" to id))
         Log.d("Notes", "onCellClickListener: $id")
 
         (activity as MainActivity).setId(id)

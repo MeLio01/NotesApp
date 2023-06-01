@@ -18,7 +18,6 @@ class Adapter(private val context: Context,
         val title: TextView = itemView.findViewById(R.id.tvNoteTitle)
         val date: TextView = itemView.findViewById(R.id.tvDate)
     }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(LayoutInflater.from(context).inflate(R.layout.rv_notes, parent, false))
     }
